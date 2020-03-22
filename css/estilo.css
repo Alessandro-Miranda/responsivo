@@ -46,6 +46,13 @@ h1, h2, h3
     color: #222;
     line-height: 1.5;
 }
+.ocultar
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
 /*header style*/
 #cabecalho
 {
@@ -130,7 +137,7 @@ h1, h2, h3
 #secao2 article:first-child
 {
     padding-top: 3.5em;
-    padding-bottom: 3.1em;
+    padding-bottom: 1.2em;
 }
 #secao2 article
 {
@@ -149,4 +156,44 @@ h1, h2, h3
     padding-top: .3em;
     padding-bottom: 1.75em;
     line-height: 1.2;
+}
+#secao2 article:last-child
+{
+    padding-top: 3em;
+    padding-bottom: 7.5em;
+}
+#icones-footer
+{
+    background: #303d4c;
+    text-align: center;
+    padding: .7em;
+}
+#icones-footer li
+{
+    display: inline-block;
+    text-align: center;
+    width: 2.9em;
+}
+#icones-footer li a[class^=icon]
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.12em;
+}
+footer
+{
+    background: #25303e;
+    color: #83969f;
+}
+footer p
+{
+    text-align: center;
+}
+#copyright
+{
+    padding: 1.1em 0 1em;
+}
+#info-comp
+{
+    padding-bottom: 3.1em;
 }
