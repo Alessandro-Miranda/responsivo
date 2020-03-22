@@ -1,20 +1,14 @@
 /*criar media para tamanho minimo 780px(48.75em), 1000px(62.5em), 1184px(74em) usando max-width de 1124px
-font family dos titulos é oxygen
-background nav header: #612674
-background hover do nav cabecalho: #7c3792
-background da primeira sectio: #f6f6f6
 color do titulo das setions: #612674
-color do texto do primeiro article da primeira section: #a87bb7
-titulo do segundo article da primeira section: #652e78
-cor do paragrafo do segundo article: #222
 background do footer: #25303e
 color do footer: #83969f
 /*global styles*/
 html
 {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
-h1, h2
+h1, h2, h3
 {
     font-family: 'Oxygen', sans-serif;
 }
@@ -65,7 +59,7 @@ h1, h2
 {
     background: #612674;
     margin-top: .5em;
-    margin-bottom: .5em;
+    padding-bottom: .5em;
 }
 #cabecalho nav ul li
 {
@@ -88,7 +82,7 @@ h1, h2
 /*section 1 style*/
 #secao1
 {
-    padding-left: 2.5em;
+    padding-left: .5em;
     background: #f6f6f6;
     text-align: center;
 }
@@ -118,7 +112,41 @@ h1, h2
     padding-top: 2.25em;
     padding-bottom: 3.1em;
 }
+#secao1 article:last-child
+{
+    padding-bottom: 3em;
+}
 #secao1 article
 {
     padding: .8em 0 0;
+}
+/*sectio2 styles*/
+#secao2
+{
+    text-align: left;
+    background: white;
+    padding-left: 2.5em;
+}
+#secao2 article:first-child
+{
+    padding-top: 3.5em;
+    padding-bottom: 3.1em;
+}
+#secao2 article
+{
+    padding: .2em 0 1.75em;
+}
+#secao2 article h3
+{
+    color: #612674;
+    text-transform: uppercase;
+    font-size: 1.375em;
+    padding-bottom: .7em;
+    letter-spacing: 3px;
+}
+#secao2 article p
+{
+    padding-top: .3em;
+    padding-bottom: 1.75em;
+    line-height: 1.2;
 }
